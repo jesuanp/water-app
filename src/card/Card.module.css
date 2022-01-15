@@ -1,0 +1,68 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 40em;
+    height: 20em;
+    background-color: rgba(255, 255, 255, 0.281);
+}
+
+.titulo {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+.titulo span {
+    font-size: 2em;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.divInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.maxMinHum {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.maxMinHum span {
+    font-size: 1.6em;
+}
+
+.nameCity {
+    font-size: 2em;
+}
+
+.img {
+    width: 5em;
+    height: 5em;
+}
+
+.tempImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    gap: 1em;
+}
+
+.tempImg span {
+    font-size: 2rem;
+}
+
+.divSpan {
+    border-bottom: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+    width: 15em;
+}
