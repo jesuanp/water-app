@@ -1,10 +1,23 @@
 import './App.css';
+import Cards from './cards/Cards';
+import Card from './card/Card';
+import InputSearch from './inputSearch/InputSearch';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello</h1>
-    </div>
+    <>
+      <div className='fondo'></div>
+
+      <div className="App">
+
+        <InputSearch />
+
+        <Card />
+
+        <Cards />
+
+      </div>
+    </>
   );
 }
 
