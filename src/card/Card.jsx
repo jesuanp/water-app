@@ -19,9 +19,11 @@ const Card = () => {
             <br />
 
             <div className={s.card}>
+
                 <div className={s.titulo}>
                     <span>Clima de la ciudad</span>
                 </div>
+
                 {clima &&  <div className={s.info}>
                     <div className={s.divInfo}>
                         <span className={s.nameCity}>{clima && clima.name}</span>
@@ -30,7 +32,7 @@ const Card = () => {
                             <span >{clima && redondeo(clima.main.temp)}°</span>
                             <img className={s.img} src={`https://openweathermap.org/img/w/${clima.weather[0].icon}.png`} alt="imagen del clima actual" />
                         </div>
-                        <span>sensación de: {clima && redondeo(clima.main.feels_like)}</span>
+                        <span>sensación de {`${clima && redondeo(clima.main.feels_like)}°`}</span>
                     </div>
                     <br />
                     <div className={s.maxMinHum}>

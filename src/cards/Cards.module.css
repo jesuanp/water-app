@@ -1,18 +1,27 @@
+.containerFather {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 .container {
     display: flex;
-    flex-direction: row;
     gap: 1em;
     margin-top: 2em;
+    margin-bottom: 2em;
+    overflow: auto;
+    max-width: 60em;
 }
 
 .info {
-    width: 18em;
-    height: 10em;
+    min-width: 18em;
+    min-height: 10em;
     background-color: rgba(255, 255, 255, 0.281);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 0.4em;
 }
 
 .nameCity {
@@ -52,4 +61,43 @@
     flex-direction: row;
     justify-content: center;
     gap: 2em;
+}
+
+/* vvvvvv scrol vvvvvv */
+/* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
+
+.container::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.container::-webkit-scrollbar:vertical {
+    width:10px;
+}
+
+.container::-webkit-scrollbar-button:increment,.cardVentana::-webkit-scrollbar-button {
+    display: none;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 5px;
+    border: 2px solid #f1f2f3;
+}
+
+.container::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+
+/* ^^^^^^ scrol ^^^^^^ */
+
+@media (max-width: 980px) {
+    .container {
+        width: 40em;
+    }
+}
+
+@media (max-width: 660px) {
+    .container {
+        width: 20em;
+    }
 }
