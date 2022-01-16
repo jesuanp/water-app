@@ -8,6 +8,7 @@
     width: 40em;
     height: 20em;
     background-color: rgba(255, 255, 255, 0.281);
+    border-radius: 0.4em;
 }
 
 .titulo {
@@ -65,4 +66,18 @@
     display: flex;
     justify-content: space-between;
     width: 15em;
+}
+
+@media (max-width: 660px) {
+
+    .info {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        width: 20em;
+        height: 27em;
+    }
 }
