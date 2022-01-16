@@ -1,6 +1,7 @@
 import axios from 'axios';
 
 export const climaCity = "OBTENGO_EL_CLIMA_DE_LA_CIUDAD";
+export const deleteClimaCity = "ELIMINAR_UN_CLIMA_DE_UNA_CIUDAD";
 
 export const getClimaCity = (city) => {
     return async function (dispatch){
@@ -8,6 +9,16 @@ export const getClimaCity = (city) => {
         return dispatch({
             type:climaCity,
             payload: respuesta.data
+        })
+    }
+}
+
+export const deleteClima = (id, index) => {
+    return function (dispatch) {
+        return dispatch({
+            type: deleteClimaCity,
+            payload: id,
+            index: index
         })
     }
 }
