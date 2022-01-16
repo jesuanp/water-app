@@ -1,5 +1,6 @@
 import {
     climaCity,
+    deleteClimaCity,
 } from './actions';
 
 const initialState = {
@@ -14,6 +15,11 @@ const reducer = (state = initialState, action) => {
             ...state,
             clima: action.payload,
             climasCities: [action.payload, ...state.climasCities]
+        }
+
+        case deleteClimaCity: return {
+            ...state,
+            climasCities: state.climasCities.filter((e, i) => action.index !== i || e.id !== action.payload)
         }
         
         default: return state;

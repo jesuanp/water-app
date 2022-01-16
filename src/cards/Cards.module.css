@@ -1,16 +1,30 @@
 .containerFather {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     justify-content: center;
     width: 100%;
 }
 
+.historial {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-size: 1.8em;
+}
+
 .container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 1em;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     overflow: auto;
     max-width: 60em;
+}
+
+.card {
+    position: relative;
 }
 
 .info {
@@ -22,6 +36,11 @@
     justify-content: center;
     align-items: center;
     border-radius: 0.4em;
+    backdrop-filter: blur(5px);
+    position: relative;
+}
+.info:hover {
+    cursor: pointer;
 }
 
 .nameCity {
@@ -61,6 +80,21 @@
     flex-direction: row;
     justify-content: center;
     gap: 2em;
+}
+
+.btnDelete {
+    padding: 4px 4px 0px 4px;
+    border: none;
+    background-color: #ff150062;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border-radius: 0.5em;
+    z-index: 1;
+}
+.btnDelete:hover {
+    cursor: pointer;
+    background-color: transparent;
 }
 
 /* vvvvvv scrol vvvvvv */
